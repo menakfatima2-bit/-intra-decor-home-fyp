@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background: #f1f2f6;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 280px;
+    background: #4b2c2c;
+    padding: 30px 20px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sidebar a {
+    display: block;
+    color: #dcdde1;
+    text-decoration: none;
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #ffa502;
+    color: #fff;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    margin-left: 280px;
+    padding: 60px;
+    width: 100%;
+}
+
+/* FORM CARD */
+.container {
+    max-width: 900px;
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    border-top: 6px solid #ffa502;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #4b2c2c;
+    font-size: 28px;
+}
+
+/* FORM GRID */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 30px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+label {
+    font-weight: 600;
+    color: #4b2c2c;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    border: 1px solid #dcdde1;
+    background: #f9fafc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ffa502;
+    box-shadow: 0 0 8px rgba(255,165,2,0.2);
+    background: #fff;
+    outline: none;
+}
+
+/* BUTTON */
+button {
+    grid-column: 1 / -1;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #4b2c2c;
+    color: #fff;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffa502;
+    transform: translateY(-2px);
+}

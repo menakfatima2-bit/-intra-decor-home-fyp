@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background: #f1f2f6;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 280px;
+    background: #4b2c2c;
+    padding: 30px 20px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sidebar a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #dcdde1;
+    text-decoration: none;
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #ffa502;
+    color: #fff;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    margin-left: 280px;
+    padding: 50px;
+    width: 100%;
+}
+
+/* DETAILS CARD */
+.details-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    border-top: 6px solid #ffa502;
+}
+
+.details-card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4b2c2c;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* PRODUCT IMAGE */
+.product-image {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.product-image img {
+    width: 250px;
+    border-radius: 12px;
+    border: 3px solid #ffa502;
+}
+
+/* INFO GRID */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    background: #f9fafc;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 1px solid #dcdde1;
+}
+
+.info-item strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #4b2c2c;
+}
+
+.type-badge {
+    background:#1e90ff;
+    color:#fff;
+    padding:4px 10px;
+    border-radius:12px;
+    font-size:13px;
+}
+
+/* DESCRIPTION */
+.description {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* BACK BUTTON */
+.back-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #4b2c2c;
+    color: #fff;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #ffa502;
+    transform: translateY(-2px);
+}
+
+/* STATUS TOGGLE */
+/* ... existing styles same as before ... */
+
+/* STATUS STYLING */
+.status-active {
+    color: #2ecc71; /* green */
+    font-weight: 600;
+}
+
+.status-out {
+    color: #e74c3c; /* red */
+    font-weight: 600;
+}
+
+/* ACTIVE/INACTIVE BUTTONS */
+.active-btn { background:#2ecc71; }
+.inactive-btn { background:#e74c3c; }
+
+.status-toggle a:hover { opacity:0.85; }
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .main-content {
+        padding: 30px 20px;
+    }
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* WALLPAPER NOTE */
+.wallpaper-note {
+    margin-top: 18px;
+    background: #fff3cd;
+    border-left: 4px solid #ffa502;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 13px;
+    color: #7a5c00;
+    line-height: 1.6;
+}
+
+.wallpaper-note strong {
+    color: #cc7a00;
+}
