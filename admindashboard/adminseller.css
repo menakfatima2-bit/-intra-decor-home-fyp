@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+.dashboard {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: linear-gradient(180deg, #4b2c2c, #3a2020);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: white;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+.sidebar a:hover,
+.sidebar .active {
+    background: #ffa502;
+}
+
+/* MAIN */
+.main-content {
+    margin-left: 220px;
+    padding: 30px;
+    width: 100%;
+}
+
+/* HEADING */
+h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th {
+    background: #4b2c2c;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f1f2f6;
+}
+
+/* STATUS BADGE */
+span {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.active {
+    background: #d4edda;
+    color: #155724;
+}
+
+.blocked {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* BUTTONS */
+.approve-btn {
+    background: #2ed573;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.block-btn {
+    background: #ff4757;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.approve-btn:hover,
+.block-btn:hover {
+    opacity: 0.85;
+}
