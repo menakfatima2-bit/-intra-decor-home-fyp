@@ -1,0 +1,125 @@
+/* Body */
+body{
+font-family: Arial, sans-serif;
+background:#f4f6f9;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+/* Container */
+.container{
+width:360px;
+}
+
+/* Form box */
+.form-box{
+background:white;
+padding:35px 30px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+.form-box h2{
+text-align:center;
+margin-bottom:20px;
+color:#333;
+}
+
+/* Inputs */
+form input{
+width:100%;
+padding:12px 14px;
+margin:10px 0;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
+box-sizing:border-box;
+}
+
+/* Button */
+form button{
+width:100%;
+padding:12px;
+background:#4b2c2c;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+margin-top:10px;
+}
+
+form button:hover{
+background:#3a1f1f;
+}
+
+/* Password wrapper */
+.password-wrapper{
+position:relative;
+width:100%;
+}
+
+/* Password input */
+.password-wrapper input{
+padding-right:45px;
+}
+
+/* Eye icon */
+#togglePassword{
+position:absolute;
+right:12px;
+top:50%;
+transform:translateY(-50%);
+cursor:pointer;
+font-size:20px;
+font-weight:bold;
+color:#4b2c2c;
+}
+
+/* Error message */
+.error{
+color:red;
+margin-top:5px;
+font-size:14px;
+}
+
+/* Links */
+.form-box p{
+text-align:center;
+margin-top:12px;
+}
+
+.form-box a{
+color:#4b2c2c;
+text-decoration:none;
+font-weight:500;
+}
+
+.form-box a:hover{
+text-decoration:underline;
+}
+
+.password-wrapper{
+position:relative;
+width:100%;
+}
+
+.password-wrapper input{
+width:100%;
+padding:12px 40px 12px 12px;
+box-sizing:border-box;
+}
+
+#togglePassword{
+position:absolute;
+right:12px;
+top:50%;
+transform:translateY(-50%);
+cursor:pointer;
+font-size:18px;
+font-weight:bold;
+color:#4b2c2c;
+}
